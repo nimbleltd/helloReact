@@ -1,3 +1,14 @@
+var GreeterMessage = React.createClass({
+	render: function () {
+		return (
+			<div>
+				<h1>Some H1</h1>
+				<p>Some Paragraph</p>
+			</div>
+		);
+	}
+});
+
 var Greeter = React.createClass({
 	getDefaultProps: function (){
 		return {
@@ -33,6 +44,9 @@ var Greeter = React.createClass({
 			<div>
 				<h1>Hello {name} Yall via JSX</h1>
 				<p>{msg + '!!'}</p>
+
+				<GreeterMessage/>
+
 
 				<form onSubmit={this.onButtonClick}>
 					<input type="text" ref="name"/>
