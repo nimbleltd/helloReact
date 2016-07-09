@@ -53,17 +53,10 @@ var Greeter = React.createClass({
 	render: function () {
 		var name = this.state.name;	
 		var msg = this.props.msg;
-
-
 		return (
 			<div>
-
-
-
 				<GreeterMessage name={name} message={message}/>
-
 				<GreeterForm onNewName={this.handleNewName}/>
-
 			</div>
 		);
 	}
